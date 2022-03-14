@@ -1,0 +1,74 @@
+<!doctype html>
+<title>FlexBox</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+    text-align: center;
+  }
+
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <header> Sample Header</header>
+  <div id="main">
+    <article >
+        <h1>HTML INTRODUCTION</h1></h1>
+        <p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+    </article>
+    <article >
+
+    <h1>CSS INTRODUCTION</h1>
+    <p>CSS stands for Cascading Style Sheets
+    CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+    CSS saves a lot of work. It can control the layout of multiple web pages all at once
+    External stylesheets are stored in CSS files</p>
+
+    </article >
+    <article >
+        <h1>JavaScript INTRODUCTION</h1>
+        <p>JavaScript is a lightweight, cross-platform, and interpreted scripting language. It is well-known for the development of web pages, many non-browser environments also use it. JavaScript can be used for Client-side developments as well as Server-side developments.</p>
+
+    </article>
+
+
+   <nav ><div><a href="https://www.w3schools.com/html/html_intro.asp#:~:text=HTML%20stands%20for%20Hyper%20Text,how%20to%20display%20the%20content"> HTML INTRODUCTION</a></div>
+   <div><a href="https://www.w3schools.com/css/css_intro.asp">CSS INTRODUCTION</a></div>
+    <div><a href="https://www.w3schools.com/js/js_intro.asp">JAVASCRIPT</a></div></nav>
+
+    </nav>
+    <aside>examples of html, css and JavaScript are show in side of navigation bar please to refer</aside>
+  </div>
+  <footer> Sample Footer</footer>
+</body>
